@@ -7,7 +7,7 @@ OUTPUT_DIR := ../
 CXX := g++
 
 CXX_FLAGS := -O3 -Wall
-LD_FLAGS = `pkg-config --static --libs glfw3` -lvulkan
+LD_FLAGS = -lglfw -lvulkan
 
 CPP_FILES := $(wildcard $(SRC_DIR)/*.cpp)
 CPPOBJ_FILES := $(addprefix $(OBJ_DIR)/,$(notdir $(CPP_FILES:.cpp=.o)))
