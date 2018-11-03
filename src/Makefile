@@ -6,8 +6,8 @@ OUTPUT_DIR := ../
 
 CXX := g++
 
-CXX_FLAGS := -O3 -Wall
-LD_FLAGS = -lglfw -lvulkan
+CXX_FLAGS := -O3 -Wall -Wsign-compare
+LD_FLAGS = -lglfw -lvulkan -Wsign-compare
 
 CPP_FILES := $(wildcard $(SRC_DIR)/*.cpp)
 CPPOBJ_FILES := $(addprefix $(OBJ_DIR)/,$(notdir $(CPP_FILES:.cpp=.o)))

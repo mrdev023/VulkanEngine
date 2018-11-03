@@ -1,0 +1,2 @@
+glslangValidator -V res/shaders/shader.vert
+glslangValidator -V res/shaders/shader.frag

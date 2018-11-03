@@ -1,2 +1,4 @@
 make
+./compileShaders
 ./main
+rm -f vert.spv frag.spv
